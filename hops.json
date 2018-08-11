@@ -1,0 +1,419 @@
+{
+    "search" : [
+        {
+            "name": "Ahtanum",
+            "brand": "YCR",
+            "location": {
+                "country" : "United States",
+                "state" : "Washington",
+                "locale" : "Yakima Valley"
+            },
+            "uses": ["Bittering", "Aroma"],
+            "flavors": ["Citrus", "Grapefruit", "Earthy", "Floral"],
+            "alpha": {"min": 0.05, "max": 0.07},
+            "beta": {"min": 0.05, "max": 0.06},
+            "oils": {"min": 0.8, "max": 1.2},
+            "beers": ["IPA", "Hefeweizen", "Bitter", "Amber", "Brown", "Wheat", "Lager"]
+        },
+        {
+            "name": "Amarillo",
+            "brand": "VGF",
+            "location":{
+                "country": "United States",
+                "state":"Washington"
+            },
+            "uses": ["Aroma", "Flavor"],
+            "flavors": ["Floral", "Spicy", "Citrus", "Orange"],
+            "alpha": {"min": 0.06, "max": 0.07},
+            "beta": {"min": 0.05, "max": 0.07},
+            "oils": {"min": 1.5, "max": 1.9},
+            "beers": ["Ale", "IPA"]
+        },
+        {
+            "name": "Apollo",
+            "brand": "Golden Gate Roza Hop Ranches",
+            "location": {
+                "country" : "United States",
+                "state" : "Washington",
+                "locale" : "Prosser, WA"
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : ["Bitter"],
+            "alpha": {"min": 0.15, "max": 0.19},
+            "beta" : {"min": 0.055, "max": 0.08},
+            "oils" : {"min": 1.5, "max": 2.5},
+            "beers" : ["IPA", "Imperial IPA"]
+        },
+        {
+            "name": "Azacca",
+            "brand": "ADHA",
+            "location": {
+                "country" : "United States",
+                "state" : "Washington"
+            }, 
+            "uses" : ["Aroma", "Flavor"],
+            "flavors" : ["Mango", "Papaya", "Orange", "Grapefruit", "Lemon", "Spicy", "Citrus", "Tropical", "Grassy", "Piney"],
+            "alpha": {"min": 0.14, "max": 0.16},
+            "beta" : {"min": 0.04, "max": 0.055},
+            "oils" : {"min": 1.6, "max": 2.5}
+        },
+        {
+            "name": "Bravo",
+            "brand": "Hopsteiner Breeding Program",
+            "location": {
+                "country" : "United States"
+            },
+            "uses" : ["Bittering", "Aroma"],
+            "flavors" : ["Spicy", "Fruity", "Floral"],
+            "alpha" : {"min" : 0.14, "max" : 0.17},
+            "beta" : {"min": 0.03, "max" : 0.05},
+            "oils": {"min" : 1.6, "max" : 2.4},
+            "beers": ["Pale Ale", "IPA", "Stout"]
+        },
+        {
+            "name": "Calypso",
+            "location": {
+                "country": "United States",
+                "state": "Washington",
+                "locale": "Yakima Valley"
+            },
+            "uses" : ["Bittering", "Aroma"],
+            "flavors" : ["Crisp", "Fruity", "Pear", "Apple", "Earthy", "Tea"],
+            "alpha" : {"min" : 0.12, "max": 0.14},
+            "beta" : {"min": 0.05, "max": 0.06},
+            "oils": {"min": 1.6, "max": 2.5}
+        },
+        {
+            "name": "Cascade",
+            "brand": "USDA-ARS",
+            "location": {
+                "country" : "United States",
+                "state" : "Oregon"
+            }, 
+            "uses" : ["Aroma", "Flavor", "Bittering"],
+            "flavors" : ["Floral", "Spicy", "Citrus", "Grapefruit"],
+            "alpha": {"min": 0.045, "max": 0.07},
+            "beta" : {"min": 0.048, "max": 0.07},
+            "oils" : {"min": 0.7, "max": 1.4},
+            "beers": ["Pale Ale", "IPA", "Porter"]
+        },
+        {
+            "name": "Centennial",
+            "location": {
+                "country" : "United States"
+            }, 
+            "uses" : ["Bittering", "Aroma"],
+            "flavors" : ["Citrus", "Lemon", "Floral"],
+            "alpha": {"min": 0.095, "max": 0.115},
+            "beta" : {"min": 0.035, "max": 0.045},
+            "oils" : {"min": 1.5, "max": 2.5},
+            "beers": ["Ale", "IPA"]
+        },
+        {
+            "name": "Chelan",
+            "brand": "John I. Haas, Inc.",
+            "location": {
+                "country" : "United States",
+                "state" : "Washington"
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : [],
+            "alpha": {"min": 0.115, "max": 0.135},
+            "beta": {"min": 0.085, "max": 0.115},
+            "oils": {"min": 1.5, "max": 1.9},
+            "beers": ["Ale", "American Ale"]
+        },
+        {
+            "name": "Chinook",
+            "location": {
+                "country" : "United States",
+                "state" : ["Washington", "Idaho"]
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : ["Piney", "Spicy"],
+            "alpha": {"min": 0.12, "max": 0.14},
+            "beta" : {"min": 0.03, "max": 0.04},
+            "oils" : {"min": 1.5, "max": 2.7},
+            "beers": ["Pale Ale", "Lager", "APA", "IPA"]
+        },
+        {
+            "name": "Citra",
+            "brand": "HBC",
+            "location": {
+                "country" : "",
+                "state" : "",
+                "locale" : ""
+            }, 
+            "uses" : ["Aroma"],
+            "flavors" : ["Citrus", "Tropical"],
+            "alpha": {"min": 0.1, "max": 0.15},
+            "beta" : {"min": 0.03, "max": 0.045},
+            "oils" : {"min": 1.5, "max": 3.0},
+            "beers": ["IPA", "APA", "Amber", "American Ale"]
+        },
+        {
+            "name": "Crystal",
+            "brand": ["Hallertau", "Cascade", "Brewer's Gold", "Early Green"],
+            "location": {
+                "country" : "United States"
+            }, 
+            "uses" : ["Aroma"],
+            "flavors" : ["Woody", "Floral", "Fruity", "Spicy"],
+            "alpha": {"min": 0.035, "max": 0.062},
+            "beta" : {"min": 0.058, "max": 0.007},
+            "oils" : {"min": 0.82},
+            "beers": ["Pilsner", "Lager", "Kölsch", "Belgian Ale", "Bitter", "Stout", "IPA", "Golden Ale"]
+        },
+        {
+            "name": "Fuggle",
+            "location": {
+                "country" : "England",
+                "locale" : "Horsmonden, Kent"
+            }, 
+            "uses" : ["Aroma"],
+            "flavors" : ["Earthy"],
+            "alpha": {"min": 0.045, "max": 0.05},
+            "beta" : {"min": 0.021, "max": 0.028},
+            "oils" : {"min": 0.44, "max": 0.83},
+            "beers": ["Stout", "English Beer", "American Ale", "Amber", "Golden Ale"]
+        },
+        {
+            "name": "East Kent Golding",
+            "uses" : ["Aroma"],
+            "flavors" : ["Floral", "Earthy"],
+            "alpha": {"min": 0.04, "max": 0.06},
+            "beta" : {"min": 0.02, "max": 0.03},
+            "oils" : {"min": 0.85},
+            "beers": ["English Beer", "Ale", "Belgian Ale"]
+        },
+        {
+            "name": "Lambic",
+            "brand": "",
+            "location": {
+                "country" : "United States",
+                "state" : "Oregon",
+                "locale" : "Willamette Valley"
+            }, 
+            "uses" : [""],
+            "flavors" : ["Fruity", "Floral"],
+            "alpha": {"min": 0.01, "max": 0.02},
+            "beta" : "",
+            "oils" : "",
+            "beers": ["Lambic"]
+        },
+        {
+            "name": "Magnum",
+            "location": {
+                "country" : "United States",
+                "state" : "Washington",
+                "locale" : "Yakima Valley"
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : ["Bitter", "Citrus"],
+            "alpha": {"min": 0.1, "max": 0.14},
+            "beta" : {"min": 0.045, "max": 0.07},
+            "oils" : {"min": 1.9, "max": 3.0},
+            "beers": ["Ale", "Lager", "IPA"]
+        },
+        {
+            "name": "Mosaic",
+            "brand": "HBC",
+            "location": {
+                "country" : "United States"
+            }, 
+            "uses" : ["Bittering", "Aroma"],
+            "flavors" : ["Tropical", "Blueberry", "Tangerine", "Floral", "Earthy"],
+            "alpha": {"min": 0.115, "max": 0.135},
+            "beta" : {"min": 0.032, "max": 0.026},
+            "oils" : {"min": 1.0, "max": 1.5},
+            "beers": ["Brown", "IPA", "Pale Ale"]
+        },
+        {
+            "name": "Mount Hood",
+            "location": {
+                "country" : "United States"
+            }, 
+            "uses" : ["Aroma"],
+            "flavors" : [],
+            "alpha": {"min": 0.04, "max": 0.07},
+            "beta" : {"min": 0.05, "max": 0.08},
+            "oils" : {"min": 1.0, "max": 1.7},
+            "beers": ["Hefeweizen", "Brown", "Golden Ale", "Pale Ale", "Amber", "IPA", "Wheat", "Lager"]
+        },
+        {
+            "name": "Northern Brewer",
+            "brand": "Northern Brewer",
+            "location": {
+                "country" : ["United States", "Germany"],
+                "locale": "Wye College"
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : ["Woody", "Earthy", "Fruity"],
+            "alpha": {"min": 0.095, "max": 0},
+            "beta" : {"min": 0.04, "max": 0},
+            "oils" : {"min": 1.61, "max": 0},
+            "beers": ["IPA", "Pale Ale", "Hefeweizen"]
+        },
+        {
+            "name": "Nugget",
+            "uses" : ["Bittering", "Aroma"],
+            "flavors" : ["Floral", "Resiny", "Herbal"],
+            "alpha": {"min": 0.095, "max": 0.14},
+            "beta" : {"min": 0.042, "max": 0.058},
+            "oils" : {"min": 1.5, "max": 3.0},
+            "beers": ["Ale", "Stout", "IPA", "Imperial IPA"]
+        },
+        {
+            "name": "Perle",
+            "location": {
+                "country" : "United States"
+            }, 
+            "uses" : ["Bittering", "Aroma"],
+            "flavors" : ["Spicy", "Floral", "Fruity"],
+            "alpha": {"min": 0.06, "max": 0.095},
+            "beta" : {"min": 0.03, "max": 0.05},
+            "oils" : {"min": 0.7, "max": 1.2},
+            "beers": ["Hefeweizen", "Ale", "Lager", "Pilsner", "Kölsch"]
+        },
+        {
+            "name": "Saaz",
+            "location": {
+                "country" : "Czech Republic",
+                "locale" : "Bohemia"
+            }, 
+            "uses" : ["Aroma"],
+            "flavors" : ["Earthy", "Spicy"],
+            "alpha": {"min": 0.025, "max": 0.045},
+            "beta" : {"min": 0.04, "max": 0.06},
+            "oils" : {"min": 0.4, "max": 0.8},
+            "beers": ["Ale", "European"]
+        },
+        {
+            "name": "Simcoe",
+            "brand": "YCR",
+            "location": {
+                "country" : "United States",
+                "state" : "Washington",
+                "locale" : "Yakima Valley"
+            }, 
+            "uses" : ["Aroma", "Bittering"],
+            "flavors" : ["Passion Fruit", "Piney", "Earthy", "Citrus"],
+            "alpha": {"min": 0.12, "max": 0.15},
+            "beta" : {"min": 0.04, "max": 0.05},
+            "oils" : {"min": 2.0, "max": 2.5},
+            "beers": ["Double IPA", "IPA", "Pale Ale"]
+        },
+        {
+            "name": "Willamette",
+            "location": {
+                "country" : "United States",
+                "state" : "Oregon",
+                "locale" : "Wilamette Valley"
+            }, 
+            "uses" : ["Aroma"],
+            "flavors" : ["Floral", "Fruity", "Earthy", "Spicy"],
+            "alpha": {"min": 0.04, "max": 0.06},
+            "beta" : {"min": 0.03, "max": 0.04},
+            "oils" : {"min": 1.0, "max": 1.5},
+            "beers": ["Ale", "American Ale", "Brown", "Pale Ale", "English Beer", "Porter"]
+        },
+        {
+            "name": "Admiral",
+            "location": {
+                "country" : "England",
+                "locale" : "Wye College"
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : ["Bitter", "Citrus", "Herbal"],
+            "alpha": {"min": 0.13, "max": 0.162},
+            "beta" : {"min": 0.048, "max": 0.061},
+            "oils" : {"min": 1.0, "max": 1.7},
+            "beers": ["Bitter", "Belgian Ale", "APA", "IPA"]
+        },
+        {
+            "name": "Agnus",
+            "location": {
+                "country" : "Czech Republic"
+            }, 
+            "uses" : ["Bittering", "Aroma"],
+            "flavors" : ["Spicy", "Herbal"],
+            "alpha": {"min": 0.09, "max": 0.14},
+            "beta" : {"min": 0.04, "max": 0.065},
+            "oils" : {"min": 2.0, "max": 3.0},
+            "beers": ["Pilsner", "Lager", "Pale Ale"]
+        },
+        {
+            "name": "Banner",
+            "location": {
+                "country" : "United States"
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : ["Bitter"],
+            "alpha": {"min": 0.084, "max": 0.13},
+            "beta" : {"min": 0.053, "max": 0.08},
+            "oils" : {"min": 2.17},
+            "beers": ["Bitter"]
+        },
+        {
+            "name": "Bitter Gold",
+            "uses" : ["Bittering"],
+            "flavors" : ["Bitter"],
+            "alpha": {"min": 0.154, "max": 0.188},
+            "beta" : {"min": 0.061, "max": 0.08},
+            "oils" : {"min": 0.81, "max": 3.92},
+            "beers": ["Ale", "Lager", "Pilsner", "Bitter", "IPA"]
+        },
+        {
+            "name": "Brewer's Gold",
+            "location": {
+                "country" : "England",
+                "locale" : "Wye College"
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : ["Spicy", "Black Currant"],
+            "alpha": {"min": 0.071, "max": 0.113},
+            "beta" : {"min": 0.033, "max": 0.061},
+            "oils" : {"min": 1.96},
+            "beers": ["Ale", "APA", "Bitter", "Stout"]
+        },
+        {
+            "name": "Brewer's Gold",
+            "location": {
+                "country" : "United States",
+                "state" : "Oregon"
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : [],
+            "alpha": {"min": 0.081, "max": 0.131},
+            "beta" : {"min": 0.037, "max": 0.068},
+            "oils" : {"min": 1.8},
+            "beers": ["IPA"]
+        },
+        {
+            "name": "Bullion",
+            "location": {
+                "country" : "England",
+                "locale" : "Wye College"
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : ["Spicy", "Fruity"],
+            "alpha": {"min": 0.067, "max": 0.129},
+            "beta" : {"min": 0.037, "max": 0.091},
+            "oils" : {"min": 1.14, "max": 2.70},
+            "beers": ["Stout"]
+        },
+        {
+            "name": "California Cluster",
+            "location": {
+                "country" : "United States",
+                "state" : "California",
+                "locale" : "Clearlake"
+            }, 
+            "uses" : ["Bittering"],
+            "flavors" : ["Generic"],
+            "alpha": {"min": 0.055, "max": 0.085},
+            "beta" : {"min": 0.045, "max": 0.055},
+            "beers": ["Porter", "English Beer", "Amber"]
+        }
+    ]
+}

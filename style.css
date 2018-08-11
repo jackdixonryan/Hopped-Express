@@ -1,0 +1,15 @@
+#all{
+    border: 1px lightgray solid;
+    padding: 15px;
+    width: 100%;
+}
+
+#all h2 {
+    text-align: center;
+    color: maroon;
+}
+
+.panel {
+    width: 500px;
+    margin: 10px auto 10px auto;
+}

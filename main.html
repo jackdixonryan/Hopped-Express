@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hopsFinder</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+
+  <link rel='stylesheet' href='https://meyerweb.com/eric/tools/css/reset/reset.css'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <style type='text/css'>
+
+    
+      #all{
+          border: 1px lightgray solid;
+          padding: 15px;
+          width: 100%;
+      }
+
+      #all h2 {
+          text-align: center;
+          color: maroon;
+      }
+
+      .panel {
+          width: 500px;
+          margin: 10px auto 10px auto;
+      }
+
+  </style>
+
+</head>
+<body>
+
+    <div class='container'>
+        <div class='jumbotron'>
+            <h1>Hops Finder</h1>
+            <h3>Find your Brew.</h3>
+            <hr>
+            <button class='btn btn-danger btn-log'><span class='fa fa-plus'></span>Add a hop</button>
+        </div>
+        <div class='row'>
+            <div class='col-lg-12'>
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                        <h3 class='panel-title'><strong>Hops Search</strong></h3>
+                    </div>
+                </div>
+                <div class='panel-body'>
+                    <input type='text' id='character-search' class='form-control'>
+                    <br>
+                    <div class='text-right'>
+                        <button type='submit' class='btn btn-primary btn-md' id='search-btn'><span class='fa fa-search'></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <h3 class='panel-title'><strong>Hops Info</strong></h3>
+                </div>
+                <div class='panel-body' id='all'>
+                    <div class='well'>
+                        <h2 id='name'>Hops example</h2>
+                        <hr>
+                        <div id='stats'>
+                            <h3>Source</h3>
+                            <p id='area'></p>
+
+                            <h3>Uses</h3>
+                            <p id='uses'></p>
+
+                            <h3>Flavors</h3>
+                            <p id='flavors'></p>
+
+                            <h3>Used in</h3>
+                            <p id='beers'></p>
+
+                            <h3>Alpha Acids</h3>
+                            <p id='alpha'></p>
+
+                            <h3>Beta Acids</h3>
+                            <p id='beta'></p>
+
+                            <h3>Total Oils</h3>
+                            <p id='oils'></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'>
+    
+$('#all').hide();
+
+$('#search-btn').on('click', function(){
+    let searchedHop = $('#character-search').val().trim();
+    searchedHop = searchedHop.replace(/\+/g, '').toLowerCase();
+
+    $.get('/api/hops/' + searchedHop, function(data){
+        if (data) {
+            console.log(data);
+            $("#all").show();
+            $("#name").text(data.name);
+            if (data.location){
+                if (data.location.country){
+                    $("#area").text(data.location.country);
+                }
+                if (data.location.state){
+                    $("#area").append(', ' + data.location.state);
+                }
+                if (data.location.locale){
+                    $("#area").append(', ' + data.location.locale);
+                }
+            } else {
+                $("#area").text('No origin could be supplied.');
+            }
+
+            for (let i = 0; i < data.uses.length; i++){
+                let li = $('<li>');
+                li.text(data.uses[i]);
+                $('#uses').append(li);
+            }
+
+            for (let i = 0; i < data.beers.length; i++){
+                let li = $('<li>');
+                li.text(data.beers[i]);
+                $('#beers').append(li);
+            }
+
+            for (let i = 0; i < data.flavors.length; i++){
+                let li = $('<li>');
+                li.text(data.flavors[i]);
+                $('#flavors').append(li);
+            }
+            
+            let alphaMin = (data.alpha.min * 100).toPrecision(3);
+            let alphaMax = (data.alpha.max * 100).toPrecision(3);
+
+            let betaMin = (data.beta.min * 100).toPrecision(3);
+            let betaMax = (data.beta.max * 100).toPrecision(3);
+            
+            $('#alpha').text(alphaMin + '% - ' + alphaMax + '%');
+            $('#beta').text(betaMin + '% - ' + betaMax + '%');
+
+            $('#oils').text(data.oils.min + ' - ' + data.oils.max + ' mL/100g');
+
+        } else {
+            $('#name').text('We were unable to locate this hop.');
+            $('#stats').hide();
+        }
+    });
+});
+
+
+    </script>
+</body>
