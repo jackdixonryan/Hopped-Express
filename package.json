@@ -1,7 +1,7 @@
 {
   "name": "hopsserve",
   "version": "1.0.0",
-  "description": "",
+  "description": "An express app using the Hopped API",
   "main": "hopsServer.js",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -12,5 +12,13 @@
     "start": "node hopsServer.js"
   },
   "author": "Jack D. Ryan",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackdixonryan/Hopped-Express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jackdixonryan/Hopped-Express/issues"
+  },
+  "homepage": "https://github.com/jackdixonryan/Hopped-Express#readme"
 }
